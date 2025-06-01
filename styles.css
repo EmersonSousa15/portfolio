@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+:root {
+  --primary-bg: #0c0c0d;
+  --card-bg: #1a1a1d;
+  --accent: #b292ff;
+  --text: #ffffff;
+  --muted: #aaaaaa;
+}
+body {
+    background-color: var(--primary-bg);
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    background-color: #211F23;
+    margin: 1rem;
+    border-radius: 25px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+header nav .menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0.5rem 1rem;
+    margin: 5px;
+    justify-content: center;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu li a:hover {
+    color: var(--accent);
+    transition: 0.3s;
+}
+
+.hero-container {
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.hero-container article {
+    width: 100%;
+    max-width: 500px;
+}
+
+.about h1 {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    color: #cccccc;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.buttons-about {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: var(--primary-bg);
+}
+
+.buttons-about button {
+    background: white;
+    color: var(--primary-color);
+    padding: 0.6rem 1.2rem;
+    border-radius: 1rem;
+    border: 0;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttons-about .button-experiencies {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+}
+
+.buttons-about .button-experiencies:hover {
+    background: #211F23;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.cards-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+
+.tecnologies-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+#technologies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card-tecnologies {
+    background-color: #211F23;
+    padding: 1.5rem 1rem;
+    border-radius: 2rem;
+    width: 180px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card-tecnologies:hover {
+    transform: scale(1.05);
+}
+
+.card-tecnologies img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.card-tecnologies h2 {
+    font-size: 1.2rem;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-footer {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.copy {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a img {
+    border: 1px solid var(--secondary-color);
+    padding: 0.5rem;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.card-header h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-header span {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.card-meta {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.card-description p {
+  line-height: 1.6;
+  color: #dddddd;
+  margin-bottom: 0.8rem;
+  text-align: justify;
+}
+
+@media (max-width: 1024px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about h1 {
+        font-size: 1.8rem;
+    }
+
+    .image-container img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .buttons-about {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    header nav .menu {
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .about h1 {
+        font-size: 1.6rem;
+    }
+
+    .about p {
+        font-size: 0.95rem;
+    }
+
+    .buttons-about {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .buttons-about button {
+        width: 100%;
+    }
+
+    .image-container img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card-tecnologies {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .copy {
+        text-align: center;
+        width: 100%;
+    }
+
+    .container-footer {
+        justify-content: center;
+    }
+}
